@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Maaz Arif — Portfolio</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+    
+      html,body{height:100%;}
+      
+
+       :root {
+  --bg: #F9FAFB;        
+  --text: #334155;      
+  --heading: #0F172A;   
+  --muted: #6B7280;     
+  --accent: #3B82F6;    
+  --accent-hover: #2563EB;
+  --card: #FFFFFF;      
+}
+
+ body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+h1, h2, h3, h4, h5 {
+  color: var(--heading);
+}
+
+.navbar, footer {
+  background: #1E293B;
+  color: #F9FAFB;
+}
+
+a.text-accent { color: var(--accent); }
+a.text-accent:hover { color: var(--accent-hover); }
+
+.card-dark {
+  background: var(--card);
+  border: 1px solid rgba(0,0,0,0.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}  
+
+
+
+
+      /* :root{
+  --bg: #5d3ca458;
+  --card: #f8f9fa; 
+  --muted: #6c757d; 
+  --accent: #0d6efd; 
+}
+body{
+  background: var(--bg);
+  color: #F9FAFB; 
+}
+.card-dark{
+  background: var(--card);
+  border: 1px solid rgba(0,0,0,0.125);
+}
+.skill-badge{
+  background: #e9ecef;
+  border: 1px solid #dee2e6;
+  color: var(--muted);
+}
+a.text-accent{ color: var(--accent); }
+a.text-accent:hover{ color: #0b5ed7; } */
+
+      .navbar{background:transparent}
+      .hero{
+        padding-top:6rem;
+        padding-bottom:4rem;
+      }
+      .profile-img{
+        width:160px; height:160px; object-fit:cover; border-radius:50%; border:4px solid rgba(255,255,255,0.06);
+        box-shadow: 0 8px 30px rgba(2,6,23,0.7);
+      }
+      .card-dark{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border:1px solid rgba(255,255,255,0.03)}
+      .skill-badge{background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.03); color:var(--muted)}
+      a.text-accent{color:var(--accent)}
+      a.text-accent:hover{color:#34dbe8}
+      .project-img{height:180px; object-fit:cover; border-bottom-left-radius:0; border-bottom-right-radius:0}
+      footer{padding:3rem 0; color:var(--muted)}
+
+      /* Responsive tweaks */
+      @media (max-width:768px){
+        .hero{padding-top:4rem}
+        .profile-img{width:120px;height:120px}
+      }
+    </style>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+          <div style="width:36px;height:36px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700">MA</div>
+          <span class="ms-1">Maaz Arif</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container">
+      <section class="row align-items-center hero">
+        <div class="col-lg-7">
+          <h1 class="display-5 fw-bold">Maaz Arif</h1>
+          <p class="lead text-muted">Web Developer &amp; Tech Learner — building clean, responsive websites and practicing full-stack basics.</p>
+
+          <div class="mt-4">
+            <a class="btn btn-outline-light me-2" href="#projects">See projects</a>
+            <a class="btn btn-accent" href="#contact" style="background:var(--accent);color:#012027;border:1px solid rgba(255,255,255,0.04);">Contact me</a>
+          </div>
+
+          <div class="mt-4 text-muted small">
+            <strong>Location:</strong> Punjab, Pakistan &nbsp; • &nbsp; <strong>Availability:</strong> Open for freelance projects
+          </div>
+        </div>
+        <div class="col-lg-5 text-center">
+          <img src="2year.jpg" alt="Profile" class="profile-img mt-3">
+        </div>
+      </section>
+
+      <section id="about" class="my-5">
+        <div class="card card-dark p-4">
+          <h3>About</h3>
+          <p class="text-muted">Hi — I'm Maaz. I enjoy turning ideas into simple, beautiful websites. I'm learning web development and practicing HTML, CSS, JavaScript and backend basics like PHP & MySQL. This portfolio showcases a few projects and my skills. I'm always open to collaborating on small web projects or learning new tools.</p>
+        </div>
+      </section>
+
+      <section id="skills" class="my-5">
+        <h3>Skills</h3>
+        <div class="d-flex flex-wrap gap-2 mt-3">
+          <span class="badge p-2 skill-badge">HTML</span>
+          <span class="badge p-2 skill-badge">CSS</span>
+          <span class="badge p-2 skill-badge">JavaScript</span>
+          <span class="badge p-2 skill-badge">Bootstrap</span>
+          <span class="badge p-2 skill-badge">PHP</span>
+          <span class="badge p-2 skill-badge">MySQL</span>
+          <span class="badge p-2 skill-badge">Git</span>
+        </div>
+      </section>
+
+      <section id="projects" class="my-5">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h3 class="m-0">Projects</h3>
+          <small class="text-muted">Click a card to view (links are placeholders)</small>
+        </div>
+
+        <div class="row g-3">
+          <!-- Project 1 -->
+          <div class="col-md-4">
+            <a href="#" class="text-decoration-none">
+              <div class="card card-dark h-100">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" class="card-img-top project-img" alt="Project 1">
+                <div class="card-body">
+                  <h5 class="card-title">Portfolio Website</h5>
+                  <p class="card-text text-muted small">A clean responsive portfolio built with Bootstrap and custom CSS.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="col-md-4">
+            <a href="#" class="text-decoration-none">
+              <div class="card card-dark h-100">
+                <img src="https://images.unsplash.com/photo-1508830524289-0adcbe822b40?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" class="card-img-top project-img" alt="Project 2">
+                <div class="card-body">
+                  <h5 class="card-title">Notes App (CRUD)</h5>
+                  <p class="card-text text-muted small">A PHP + MySQL CRUD app for creating and managing notes (in-progress).</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="col-md-4">
+            <a href="#" class="text-decoration-none">
+              <div class="card card-dark h-100">
+                <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" class="card-img-top project-img" alt="Project 3">
+                <div class="card-body">
+                  <h5 class="card-title">Blog (Static)</h5>
+                  <p class="card-text text-muted small">A simple static blog using markdown-to-html workflow and clean design.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="my-5">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card card-dark p-4">
+              <h3>Contact</h3>
+              <p class="text-muted">Want to work together or say hi? Send an email or use the form.</p>
+              <p><strong>Email:</strong> <a class="text-accent" href="mailto:maaz@example.com">muhammadmaaz4405@gmail.com</a></p>
+
+              <form onsubmit="event.preventDefault(); alert('This is a demo form — configure a backend or use mailto in the HTML.');">
+                <div class="mb-3">
+                  <label class="form-label">Your name</label>
+                  <input class="form-control bg-transparent text-white" placeholder="Your name">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Message</label>
+                  <textarea class="form-control bg-transparent text-white" rows="4" placeholder="Write a short message"></textarea>
+                </div>
+                <button class="btn" style="background:var(--accent);color:#022;">Send message</button>
+              </form>
+
+            </div>
+          </div>
+          <div class="col-md-6 mt-3 mt-md-0">
+            <div class="card card-dark p-4 text-muted">
+              <h5>Quick info</h5>
+              <ul>
+                <li>Based in Punjab, Pakistan</li>
+                <li>Open to freelance work</li>
+                <li>Preferred tools: HTML, CSS, JS, Bootstrap, PHP, MYSQL</li>
+              </ul>
+              <div class="mt-3">
+                <a class="btn btn-outline-light me-2" href="#">Resume</a>
+                <a class="btn btn-outline-light" href="#">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="mt-5 text-center">
+      <div class="container">
+        <p class="mb-0">© Maaz Arif — Built with HTML, CSS & Bootstrap • All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
